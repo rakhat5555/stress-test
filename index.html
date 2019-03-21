@@ -5,54 +5,43 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Transportation-survey</title>
+    <title>Stress test</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h2>Transportation Survey</h2>
+        <h2>Welcome to The Stress Management Society's Individual Stress Test</h2>
       </div>
-      <form id="transportation_survey">
+      <form id="stress-test">
         <div class="form-group">
-          <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
-          <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
-          <input type="checkbox" name="work-transportation" value="car">Driving a car.<br>
-          <input type="checkbox" name="work-transportation" value="carpool">Carpooling with others.<br>
-          <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
-          <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
-          <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
-          <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
-          <input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.<br>
-          <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-          <input type="checkbox" name="work-transportation" value="skateboard">Skateboarding.<br>
-          <input type="checkbox" name="work-transportation" value="rollerblade">Rollerblading.<br>
-          <input type="checkbox" name="work-transportation" value="scooter">Riding a scooter.<br>
-          <input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.<br>
+          <p> Please, check all that apply to you.</p>
+          <input type="checkbox" name="low" value="2">I eat at least one hot, balanced meal a day<br>
+          <input type="checkbox" name="high" value="4">I do not have a network of friends, family and acquaintances on whom I can rely<br>
+          <input type="checkbox" name="low" value="2">I get seven to nine hours of sleep at least four nights a week<br>
+          <input type="checkbox" name="high" value="4">I get 3 to 5 hours of sleep more  than four nights a week<br>
+          <input type="checkbox" name="low" value="2">I exercise to the point of perspiration at least twice a week<br>
+          <input type="checkbox" name="low" value="2">I do not smoke<br>
+          <input type="checkbox" name="high" value="4">I smoke 5 and more a day<br>
+          <input type="checkbox" name="high" value="4">I drink 4 + cups of coffee (or tea or cola)<br>
+          <input type="checkbox" name="high" value="4">I don't feel organised and in control<br>
         </div>
-        <div class="form-group">
-          <p>In the past year, I have used the following modes of transportation to travel to other activities and events:</p>
-          <input type="checkbox" name="fun-transportation" value="bike"> Riding a bike.<br>
-          <input type="checkbox" name="fun-transportation" value="car">Driving a car.<br>
-          <input type="checkbox" name="fun-transportation" value="carpool">Carpooling with others.<br>
-          <input type="checkbox" name="fun-transportation" value="walk">Walking.<br>
-          <input type="checkbox" name="fun-transportation" value="bus">Riding the bus.<br>
-          <input type="checkbox" name="fun-transportation" value="train">Riding the train.<br>
-          <input type="checkbox" name="fun-transportation" value="streetcar">Riding the streetcar.<br>
-          <input type="checkbox" name="fun-transportation" value="taxi">Taking a taxi.<br>
-          <input type="checkbox" name="fun-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-          <input type="checkbox" name="fun-transportation" value="skateboard">Skateboarding.<br>
-          <input type="checkbox" name="fun-transportation" value="rollerblade">Rollerblading.<br>
-          <input type="checkbox" name="fun-transportation" value="scooter">Riding a scooter.<br>
-          <input type="checkbox" name="fun-transportation" value="other">Another mode of transportation not listed here.<br>
-        </div>
+
        <button type="submit">Submit Survey</button>
       </form>
-      <span id="work-responses">
-        <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+      <span id="high">
+        <p><b>
+          Thank you for completing our Individual Stress Test.
+           You are in the high stress category. This may be due to a stressful event, a change in your life or lack of support in your life.What are the three most important things that we need to do to stay alive? Breathe, drink water and eat food. when we are stressed it has an impact on our breathing so having a simple exercise to hand to use in these situations is very useful.Make the most of your mornings – Weekend mornings are more often than not wasted by our obsession with having a lay in! Which is all well and good, but what if you got up semi early and maximised your time? Use the mornings as ‘me time’ before your weekend chores kick in by spending some time on personal pursuits – maybe read or go for a jog, start your day well!
+          </b></p>
       </span>
       <br>
-      <span id="fun-responses">
-        <p><b>You use the following methods of transportation to travel to other activities and events:</b></p>
+      <span id="low">
+        <p><b>Thank you for completing our Individual Stress Test.<br>
+          You are in the low stress category and while there are stressors in your life, you are able to cope with them effectively.</b></p>
+      </span>
+      <span id="medium">
+        <p><b>  Thank you for completing our Individual Stress Test.<br>
+          This suggests that while there are stressful events occurring in your life, you are usually able to cope with them effectively.Time management is an important stress-management technique. If you fail to master your time, you will get overwhelmed , stressed and your productivity and efficiency diminish. Time management helps you to reduce long-term stress by giving you direction when you have too much to do. </b></p>
       </span>
     </div>
   </body>

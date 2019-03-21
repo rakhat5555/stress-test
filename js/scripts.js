@@ -1,20 +1,33 @@
+
 $(document).ready(function(){
-  $("form#transportation_survey").submit(function(event){
+  $("form#stress-test").submit(function(event){
+    // debugger;
     event.preventDefault();
-  $("#work-responses").show();
-  var userResponces = [];
-// userResponces.sort();
-  $("input:checkbox[name=work-transportation]:checked").each(function() {
-    var workTransportationMode = $(this).val();
-    userResponces.push(workTransportationMode);
-    $("#work-responses").append(userResponces+ "<br>");
+
+var userResult = [];
+
+
+  $("input:checkbox[name=low]:checked").each(function() {
+    var lowInput = parseInt($(this).val());
+    userResult.push(lowInput);
+    // $("#low").append(lowInput+ "<br>");
   });
-$("#fun-responses").show();
-$("input:checkbox[name=fun-transportation]:checked").each(function() {
-  var funTransportationMode = $(this).val();
-  $("#fun-responses").append(funTransportationMode + "<br>");
+
+$("input:checkbox[name=high]:checked").each(function() {
+  var highInput = parseInt($(this).val());
+  userResult.push(highInput);
+
+  // $("#high").append(highInput + "<br>");
  });
-$("#transportation_survey").hide();
+
+ if (userResult < 9) {
+  $("#low").show();
+} else if (userResult >= 15) {
+  $("#high").show();
+ } else {
+   // console.log ("working netural")
+  $("#medium").show();
+ }
+  $("#stress-test").hide();
  });
 });
-    
